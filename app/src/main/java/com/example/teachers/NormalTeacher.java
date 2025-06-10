@@ -87,19 +87,7 @@ public class NormalTeacher extends AppCompatActivity {
         startActivity(intent);
     }
 
-//}
-//ImageView settings = findViewById(R.id.settings_icon);
-//        settings.setOnClickListener(v -> {
-//settings bottomSheet = new settings();
-//            bottomSheet.show(getSupportFragmentManager(), bottomSheet.getTag());
-//        });
-//
-//
-//        }
-//public void openSettings(View view) {
-//    Intent intent = new Intent(MainActivity.this, settings.class);
-//    startActivity(intent);
-//}
+
 
     public void openClassList(View view) {
         Intent intent = new Intent(this, ClassListActivity.class);
