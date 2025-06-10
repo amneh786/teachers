@@ -146,7 +146,7 @@ public class AttendanceActivity extends AppCompatActivity {
 
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.POST, url, requestBody,
                 response -> {
-                    Log.d("ATTENDANCE_RESPONSE", response.toString());  // 👈 اطبع الرد
+                    Log.d("ATTENDANCE_RESPONSE", response.toString()); 
                     Toast.makeText(this, "Attendance Submitted", Toast.LENGTH_SHORT).show();
                 },
                 error -> {
