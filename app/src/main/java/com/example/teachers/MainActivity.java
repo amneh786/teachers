@@ -103,7 +103,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openTimeTable(MenuItem item) {
-        // Handle action here
         Intent intent = new Intent(this, TimetableActivity.class);
         startActivity(intent);
     }
