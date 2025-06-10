@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="#F9F8FD">
 
-    <!-- Header Section -->
     <FrameLayout
         android:id="@+id/header"
         android:layout_width="match_parent"
@@ -47,7 +46,6 @@
 
     </FrameLayout>
 
-    <!-- Main Content Area -->
     <LinearLayout
         android:id="@+id/mainViews"
         android:layout_width="match_parent"
@@ -85,7 +83,6 @@
                     android:text="Class List" />
             </LinearLayout>
 
-            <!-- Assignments Card -->
             <LinearLayout
                 style="@style/DashboardCard1"
                 android:layout_margin="8dp"
@@ -102,7 +99,6 @@
                     android:text="Assignments" />
             </LinearLayout>
 
-            <!-- Attendance Card -->
             <LinearLayout
                 style="@style/DashboardCard1"
                 android:layout_margin="8dp"
@@ -121,7 +117,6 @@
 
 
 
-            <!-- Virtual Class Card -->
             <LinearLayout
                 style="@style/DashboardCard1"
                 android:layout_margin="8dp"
