@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Header -->
+        <FrameLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="175dp">
+
+            <ImageView
+                android:id="@+id/header_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/backtop"
+                android:contentDescription="@string/layout" />
+
+            <TextView
+                android:id="@+id/header_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="40dp"
+                android:text="Add Assignment"
+                android:textColor="@android:color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/back"
+                android:layout_gravity="end"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="25dp"
+                android:onClick="openSettings"
+                android:contentDescription="@string/settings"
+                app:tint="#FFFFFF" />
+        </FrameLayout>
+
+        <!-- Title -->
+        <EditText
+            android:id="@+id/titleInput"
+            android:hint="Assignment Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_border"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:layout_marginTop="20dp" />
+
+        <!-- Description (Note-style) -->
+        <EditText
+            android:id="@+id/descriptionInput"
+            android:hint="Write notes here..."
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:minLines="4"
+            android:gravity="top|start"
+            android:background="@drawable/edittext_border"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:layout_marginTop="16dp"
+            android:inputType="textMultiLine" />
+
+        <!-- Class Name -->
+        <EditText
+            android:id="@+id/classIdInput"
+            android:hint="Class Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_border"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:layout_marginTop="16dp"
+            android:inputType="text" />
+
+        <!-- Subject Name -->
+        <EditText
+            android:id="@+id/subjectIdInput"
+            android:hint="Subject Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_border"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:layout_marginTop="16dp"
+            android:inputType="text" />
+
+        <!-- Due Date -->
+        <EditText
+            android:id="@+id/dueDateInput"
+            android:hint="Due Date (YYYY-MM-DD)"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_border"
+            android:padding="12dp"
+            android:textColor="#000000"
+            android:textColorHint="#999999"
+            android:layout_marginTop="16dp"
+            android:focusable="false"
+            android:clickable="true" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitAssignmentBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#052659"
+            android:text="Submit Assignment"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

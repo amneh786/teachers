@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home1"
+        android:title="Home"
+        app:labelVisibilityMode="labeled"
+        app:tint="#7DA0CA"/>
+
+
+    <item
+        android:id="@+id/nav_Timetable"
+        android:onClick="openTimeTable"
+        android:icon="@drawable/calendar"
+        android:title="Timetable"
+        app:tint="#7DA0CA"/>
+
+    <item
+        android:id="@+id/nav_marks"
+        android:icon="@drawable/exam"
+        android:title="Marks"
+        app:tint="#7DA0CA"/>
+
+
+
+</menu>

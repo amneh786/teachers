@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Teachers</string>
+    <string name="layout">layout</string>
+    <string name="settings">settings</string>
+    <string name="Teacher">Teacher</string>
+    <string name="back">back</string>
+</resources>

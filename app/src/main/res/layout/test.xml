@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F8FD">
+
+    <!-- Header Section -->
+    <FrameLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/header_bg"
+            android:layout_width="match_parent"
+            android:layout_height="186dp"
+            android:contentDescription="@string/layout"
+            android:scaleType="fitXY"
+            android:src="@drawable/backtop" />
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:text="Welcome Teacher"
+            android:textColor="@android:color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/settings_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/settings"
+            android:contentDescription="@string/settings"
+            android:layout_gravity="end"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="25dp"
+            android:onClick="openSettings"
+            app:tint="#FFFFFF"/>
+
+    </FrameLayout>
+
+    <!-- Main Content Area -->
+    <LinearLayout
+        android:id="@+id/mainViews"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation"
+        android:layout_below="@id/header"
+        android:background="#F9F8FD"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:id="@+id/dashboardGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:alignmentMode="alignMargins"
+            android:background="#F9F8FD"
+            android:columnCount="3"
+            android:padding="16dp"
+            android:rowCount="3">
+
+            <!-- Class List Card -->
+            <LinearLayout
+                style="@style/DashboardCard1"
+                android:layout_margin="8dp"
+                android:background="@drawable/dashboard_card_bg"
+                >
+
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:src="@drawable/presentation"
+                    app:tint="#052659" />
+
+                <TextView
+                    style="@style/DashboardLabel"
+                    android:text="Class List" />
+            </LinearLayout>
+
+            <!-- Assignments Card -->
+            <LinearLayout
+                style="@style/DashboardCard1"
+                android:layout_margin="8dp"
+                android:background="@drawable/dashboard_card_bg"
+                >
+
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:src="@drawable/assignment"
+                    app:tint="#052659" />
+
+                <TextView
+                    style="@style/DashboardLabel"
+                    android:text="Assignments" />
+            </LinearLayout>
+
+            <!-- Attendance Card -->
+            <LinearLayout
+                style="@style/DashboardCard1"
+                android:layout_margin="8dp"
+                android:background="@drawable/dashboard_card_bg"
+                >
+
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:src="@drawable/user_check"
+                    app:tint="#052659" />
+
+                <TextView
+                    style="@style/DashboardLabel"
+                    android:text="Attendance" />
+            </LinearLayout>
+
+
+
+            <!-- Virtual Class Card -->
+            <LinearLayout
+                style="@style/DashboardCard1"
+                android:layout_margin="8dp"
+                android:background="@drawable/dashboard_card_bg"
+                >
+
+                <ImageView
+                    style="@style/DashboardIcon"
+                    android:src="@drawable/vedio"
+                    app:tint="#052659" />
+
+                <TextView
+                    style="@style/DashboardLabel"
+                    android:text="Virtual Class" />
+            </LinearLayout>
+        </GridLayout>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#052659"
+        app:itemIconTint="#FFFFFF"
+        app:itemTextColor="#FFFFFF"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
+</RelativeLayout>
