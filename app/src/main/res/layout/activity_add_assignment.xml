@@ -49,7 +49,6 @@
                 app:tint="#FFFFFF" />
         </FrameLayout>
 
-        <!-- Title -->
         <EditText
             android:id="@+id/titleInput"
             android:hint="Assignment Title"
@@ -61,7 +60,6 @@
             android:textColorHint="#999999"
             android:layout_marginTop="20dp" />
 
-        <!-- Description (Note-style) -->
         <EditText
             android:id="@+id/descriptionInput"
             android:hint="Write notes here..."
@@ -89,7 +87,6 @@
             android:layout_marginTop="16dp"
             android:inputType="text" />
 
-        <!-- Subject Name -->
         <EditText
             android:id="@+id/subjectIdInput"
             android:hint="Subject Name"
@@ -116,7 +113,6 @@
             android:focusable="false"
             android:clickable="true" />
 
-        <!-- Submit Button -->
         <Button
             android:id="@+id/submitAssignmentBtn"
             android:layout_width="match_parent"
